@@ -3,7 +3,7 @@ addEventListener("load", async (event) => {
 		var parent = document.getElementById("projectCards");
 		if (!parent) return;
 		const [card, synopses] = await Promise.all([
-			fetch("/resources/card.html").then(res => res.text()),
+			fetch("/resources/cardTemplate.html").then(res => res.text()),
 			fetch("/resources/synopses.txt").then(res => res.text())
 		]);
 
@@ -32,7 +32,7 @@ function buildCard(synopsis, card) {
 	cardHTML = cardHTML.firstElementChild;
 
 	cardHTML.querySelector('#image').setAttribute('src', imgSrc);
-	cardHTML.querySelector('#image').setAttribute('alt', imgAlt);
+	cardHTML.querySelector('#image').setAttribute('alt', 'Picture: ' + imgAlt);
 	cardHTML.querySelector('#image').removeAttribute('id');
 
 	cardHTML.querySelector('#title').innerText = title;
@@ -43,5 +43,8 @@ function buildCard(synopsis, card) {
 
 	cardHTML.querySelector('#link').setAttribute('href', '/projects/' + link + '.html');
 	cardHTML.querySelector('#link').removeAttribute('id');
+
+	cardHTML.querySelector('#imgLink').setAttribute('href', '/projects/' + link + '.html');
+	cardHTML.querySelector('#imgLink').removeAttribute('id');
 	return cardHTML;
 }

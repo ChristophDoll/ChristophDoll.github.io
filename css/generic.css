@@ -4,11 +4,22 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 10px;
+	gap: 15px;
 }
 
 /* Defines size of project cards. */
 .cd-cards > * 
 {
-	width: 22rem;
+	width: 24rem;	
+	transition: transform .2s;
+}
+
+.cd-cards > *:hover
+{	
+	transform: scale(1.035);
+}
+
+.cd-text-align-justify
+{
+	text-align: justify;
 }
