@@ -1,0 +1,150 @@
+﻿@font-face {
+    font-family: Montserrat;
+    src: url(/resources/Montserrat-VariableFont_wght.ttf);
+}
+
+/* General dark mode */
+html, body, .modal
+{
+    font-family: 'Montserrat', sans-serif !important;
+    color: #BFBFBF !important;
+    background-color: #181A1B !important;
+}
+
+/* Improved scrollbar color for FIREFOX. */
+*
+{
+    scrollbar-color: #454a4d #202324 !important;
+}
+
+/* Improved scrollbar color for CHROME. */
+*::-webkit-scrollbar
+{
+    background: #202324 !important;
+}
+
+/* Improved scrollbar color for CHROME. */
+*::-webkit-scrollbar-thumb
+{
+    background: #454a4d !important;
+    -webkit-border-radius: 1ex !important;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75) !important;
+}
+
+/* Improved scrollbar color for CHROME. */
+*::-webkit-scrollbar-corner
+{
+    background: #202324 !important;
+}
+
+/* Color modal background. General background is no longer set (because of the animated background). */
+.modal
+{
+    background-color: rgb(24, 26, 27) !important;
+}
+
+/* General dark mode */
+.jumbotron, .modal-content
+{
+    background-color: rgb(30, 32, 34) !important;
+}
+
+/* General dark mode */
+input, legend, .text-center, .select-selected, textarea
+{
+    color: rgb(202, 198, 190) !important;
+}
+
+/* Every input that does not have the "btn" class */
+input:not(.btn), .select-selected, textarea
+{
+    background-color: rgb(24, 26, 27) !important;
+    border-color: rgb(54, 63, 72) !important;
+}
+
+/* Add this to any icon to enhance the visibility greatly */
+.bi::before
+{
+    color: #FFFFFF !important;
+}
+
+/* Makes any link a little more visible */
+a:not(.btn) a:not(.page-link) a:not(.kofi-button)
+{
+    color: rgb(51, 162, 255) !important;
+}
+
+/* Pagination will stay white. */
+a.page-link
+{
+    color: #FFFFFF !important;
+}
+
+/* Makes any horizonral line a little more visible. */
+hr
+{
+    background-color: #6c757d !important;
+}
+
+/* Display bootstrap's cards and navbar in darkmode. */
+.card, .navbar
+{
+    background-color: #343a40 !important;
+}
+
+/* Display bootstrap's dropdown menu in darkmode. */
+.dropdown-menu
+{
+    background-color: #4B545C !important;
+}
+
+/* Display bootstrap's dropdown menu in darkmode. */
+.dropdown-item:hover
+{
+    background-color: #343a40 !important;
+}
+
+/* Display bootstrap's dropdown menu text in darkmode. */
+.dropdown-item, .nav-link
+{
+    color: #BFBFBF !important;
+}
+
+/* Background for the pagination. */
+.pagination
+{
+    background-color: rgb(24, 26, 27) !important;
+}
+
+/* Apply pagination backround. */
+.page-link
+{
+    background-color: inherit !important;
+    border: 1px solid rgb(56, 61, 63) !important;
+    color: unset !important;
+}
+
+/* Add a white overlay on hover. */
+.page-link:hover
+{
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Color for disabled pagination-controls. Derived from "text-muted". */
+.page-item.disabled
+{
+    color: #6c757d !important;
+}
+
+/* Color for selected pagination page. Derived from "btn-primary" */
+.page-item.active
+{
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+}
+
+/* Delete weird glowy-effects around pagination-controls. */
+.page-link:focus
+{
+    box-shadow: unset !important;
+}

@@ -1,0 +1,14 @@
+/* Sets flexbox settings for project cards. */
+.cd-cards
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+/* Defines size of project cards. */
+.cd-cards > * 
+{
+	width: 22rem;
+}
